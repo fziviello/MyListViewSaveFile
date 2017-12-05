@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlue2"
+    tools:context="com.ziviello.MyListViewSaveFile.HomeActivity">
+
+
+    <Button
+        android:id="@+id/buttonSvuota"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="11dp"
+        android:backgroundTint="@color/colorWhite"
+        android:text="SVUOTA"
+        android:textColor="@color/colorBlue2"
+        app:layout_constraintEnd_toStartOf="@+id/buttonAggiungi"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="360dp"
+        android:layout_height="543dp"
+        android:background="@color/colorBlue3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="216dp"
+        android:layout_height="72dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:text="LISTA"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonAggiungi"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="11dp"
+        android:background="@android:drawable/ic_menu_add"
+        android:backgroundTint="@color/colorWhite"
+        android:textColor="@color/colorBlue2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

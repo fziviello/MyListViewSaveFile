@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyListViewSaveFile</string>
+    <string name="dir_save">DatiLista</string>
+    <string name="file_save">Lista</string>
+</resources>

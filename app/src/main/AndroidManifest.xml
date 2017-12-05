@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ziviello.MyListViewSaveFile">
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/iconacarrello"
+        android:label="To Do List"
+        android:roundIcon="@mipmap/iconacarrello_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.ziviello.MyListViewSaveFile.HomeActivity" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ziviello.MyListViewSaveFile.SceltaActivity"
+            android:label="activity_scelta" >
+        </activity>
+        <activity
+            android:name="com.ziviello.MyListViewSaveFile.VisualizzaActivity"
+            android:label="activity_visualizza" >
+        </activity>
+
+    </application>
+</manifest>
